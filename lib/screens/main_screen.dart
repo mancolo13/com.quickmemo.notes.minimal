@@ -23,10 +23,26 @@ class _MainScreenState extends State<MainScreen> {
         selectedIndex: _idx,
         onDestinationSelected: (i) => setState(() => _idx = i),
         destinations: const [
-          NavigationDestination(icon: Icon(Icons.edit_note_outlined), selectedIcon: Icon(Icons.edit_note), label: 'Notepad'),
-          NavigationDestination(icon: Icon(Icons.check_box_outlined), selectedIcon: Icon(Icons.check_box), label: 'Checklist'),
-          NavigationDestination(icon: Icon(Icons.push_pin_outlined), selectedIcon: Icon(Icons.push_pin), label: 'Starred'),
-          NavigationDestination(icon: Icon(Icons.archive_outlined), selectedIcon: Icon(Icons.archive), label: 'Backup'),
+          NavigationDestination(
+            icon: Icon(Icons.note_outlined),
+            selectedIcon: Icon(Icons.note),
+            label: 'Memos',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.checklist_outlined),
+            selectedIcon: Icon(Icons.checklist),
+            label: 'Checklists',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.push_pin_outlined),
+            selectedIcon: Icon(Icons.push_pin),
+            label: 'Pinned',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.cloud_outlined),
+            selectedIcon: Icon(Icons.cloud),
+            label: 'Cloud Sync',
+          ),
         ],
       ),
     );
